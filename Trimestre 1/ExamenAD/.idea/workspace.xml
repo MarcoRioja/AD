@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367440e9-0362-4cec-ad88-762a4b128268" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../SQL Procedure/Captura de pantalla 2023-11-02 091734.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SQL Procedure/Captura de pantalla 2023-11-02 091808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SQL Procedure/Captura de pantalla 2023-11-02 091826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SQL Procedure/Captura de pantalla 2023-11-02 093626.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SQL Procedure/Captura de pantalla 2023-11-02 095939.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/AD_ConectionsManager/src/main/java/org/example/SQLFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/Jars/mysql-connector-j-8.0.33.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/SQLConnections/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/ModeloVistaControlador.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/modelovistacontrolador/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/modelovistacontrolador/ClienteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/modelovistacontrolador/ClienteModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/modelovistacontrolador/ClienteView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/modelovistacontrolador/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/phoneland/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/phoneland/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/phoneland/ProductoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/phoneland/ProductoModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/phoneland/ProductoView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/simulacro/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/simulacro/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/simulacro/ProductoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/simulacro/ProductoModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/out/production/conectarmysql/simulacro/ProductoView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/empresa/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/empresa/ClienteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/empresa/ClienteModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/empresa/ClienteView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/empresa/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/phoneland/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/phoneland/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/phoneland/ProductoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/phoneland/ProductoModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/phoneland/ProductoView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/simulacro/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/simulacro/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/simulacro/ProductoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/simulacro/ProductoModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tema 2 Projects/conectarmysql/src/simulacro/ProductoView.java" beforeDir="false" />
-    </list>
+    <list default="true" id="367440e9-0362-4cec-ad88-762a4b128268" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,34 +28,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mercp/OneDrive/Documentos/GitHub/2ºDAM/AD/Trimestre 1/ExamenAD-Marco-Rioja",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mercp/OneDrive/Documentos/GitHub/2ºDAM/AD/Trimestre 1/ExamenAD-Marco-Rioja&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ExamenAD-Marco-Rioja" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ExamenAD-Marco-Rioja" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
