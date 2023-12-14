@@ -1,17 +1,17 @@
-package org.example;
+package org.example.individuales;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ListaDeCiudades {
+public class ListaDeProductos {
     public static void main(String[] args) {
         String ruta = "prueba1/";
         File fichero = new File(ruta);
 
-        String nombreArchivo = "ciudadesDeAndalucia.txt";
-        String[] contenidoArchivo = {"Malaga","Sevilla","Cordoba","Cadiz", "Huelva", "Almeria", "Jaen", "Granada"};
+        String nombreArchivo = "lista.txt";
+        String[] contenidoArchivo = {"Portatil","Monitor","Movil","Altavoz"};
         try (BufferedWriter fw = new BufferedWriter(new FileWriter(ruta + nombreArchivo))) {
             System.out.println("Archivo " + nombreArchivo + " creado.");
             for (String element : contenidoArchivo) {

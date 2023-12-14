@@ -1,20 +1,22 @@
-package org.example;
+package org.example.individuales;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ArchivoDeMalaga {
+public class ListaDeCiudades {
     public static void main(String[] args) {
         String ruta = "prueba1/";
         File fichero = new File(ruta);
 
-        String nombreArchivo = "malaga.txt";
-        String contenidoArchivo = "Malaga es la mejor del mundo";
+        String nombreArchivo = "ciudadesDeAndalucia.txt";
+        String[] contenidoArchivo = {"Malaga","Sevilla","Cordoba","Cadiz", "Huelva", "Almeria", "Jaen", "Granada"};
         try (BufferedWriter fw = new BufferedWriter(new FileWriter(ruta + nombreArchivo))) {
             System.out.println("Archivo " + nombreArchivo + " creado.");
-            fw.write(contenidoArchivo);
+            for (String element : contenidoArchivo) {
+                fw.write(element + "\n");
+            }
         } catch (IOException e) {
             e.printStackTrace();
             System.err.println("Error al crear el archivo.");
