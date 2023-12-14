@@ -1,4 +1,4 @@
-package org.example;
+package org.SQL.Functions;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class Main {
         SQLFunctions sqlFunction = new SQLFunctions();
 
         try {
-            sqlFunction.Connect("jdbc:mysql://localhost/","root","");
+            sqlFunction.Connect("jdbc:mysql://localhost/simulacro","root","");
             sqlFunction.createDatabse("simulacro");
 
             sqlFunction.showConnData();
@@ -33,6 +33,8 @@ public class Main {
                     "Datos insertados");
 
             sqlFunction.showTableData("simulacro", "productos");
+            sqlFunction.createProcedure("ObtenerProductos()", "SELECT id, nombre, precio, precio * 1.21 AS total FROM productos;");
+            sqlFunction.executeProcedure("ObtenerProductos()");
 
             sqlFunction.CloseConnection();
         } catch (SQLException e) {

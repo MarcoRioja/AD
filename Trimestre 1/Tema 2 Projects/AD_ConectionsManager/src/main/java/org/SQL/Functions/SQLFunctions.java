@@ -1,11 +1,14 @@
-package org.example;
+package org.SQL.Functions;
 
+import javax.lang.model.element.VariableElement;
 import java.sql.*;
+import java.util.List;
 
 public class SQLFunctions {
 
     public Connection conn = null;
-    public Statement stmt = null;
+    public PreparedStatement stmt = null;
+    CallableStatement cstmt = null;
     public String sql;
     public ResultSet rs = null;
 
@@ -14,7 +17,6 @@ public class SQLFunctions {
 
     public void Connect(String url, String user, String password) throws SQLException {
         conn = DriverManager.getConnection(url, user, password);
-        stmt = conn.createStatement();
     }
 
     public void CloseConnection() throws SQLException {
@@ -54,17 +56,56 @@ public class SQLFunctions {
     }
 
     public void execute(String sql, String text) throws SQLException {
+        stmt = conn.prepareStatement(sql);
         stmt.execute(sql);
         System.out.println(text);
     }
 
     public void executeQuery(String sql, String text) throws SQLException {
+        stmt = conn.prepareStatement(sql);
         stmt.executeQuery(sql);
         System.out.println(text);
     }
 
     public void executeUpdate(String sql, String text) throws SQLException {
+        stmt = conn.prepareStatement(sql);
         stmt.executeUpdate(sql);
         System.out.println(text);
+    }
+
+    public void createProcedure(String name, String toDo) throws SQLException {
+        String sql = "DROP PROCEDURE IF EXISTS ObtenerClientes";
+        executeUpdate(sql, "La procedimiento " + name + " ha sido eliminada.");
+        sql = "CREATE PROCEDURE " + name + "BEGIN " + toDo + "END;";
+        executeUpdate(sql, "La procedimiento " + name + " ha sido creada.");
+    }
+
+    public void executeProcedure2() throws SQLException {
+        // Llamar al procedimiento almacenado
+        cstmt = conn.prepareCall("call CalculaEdad1(?,?)");
+        cstmt.setInt(1, 1977); //1 es el primer valor del argumento del procedimiento
+        cstmt.registerOutParameter(2, Types.INTEGER);
+        // Ejecutar el procedimiento
+        cstmt.execute();
+
+        // Obtener los resultados si el procedimiento devuelve algo
+        int edad=cstmt.getInt(2);//el parametro dos es el que me tiene que devolver
+
+        System.out.println("Procedimiento invocado");
+        System.out.println("la edad es "+edad);
+    }
+
+    public void executeProcedure(String name) throws SQLException {
+        cstmt = conn.prepareCall("call " + name);
+        cstmt.execute();
+        rs = cstmt.getResultSet();
+        while (rs.next()) {
+            int id = rs.getInt("id");
+            String nombre = rs.getString("nombre");
+            String precio = rs.getString("precio");
+            String precioTotal = rs.getString("total");
+            System.out.println("id: " + id + ", "
+                    + "nombre: " + nombre + ", precio: " + precio + ", total: " + precioTotal);
+        }
     }
 }
