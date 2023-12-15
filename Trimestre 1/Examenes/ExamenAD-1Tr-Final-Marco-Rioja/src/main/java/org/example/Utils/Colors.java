@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Utils;
 
 public class Colors {
     public String base = "\u001B[0m";
@@ -10,6 +10,7 @@ public class Colors {
     public String magenta = "\u001B[35m";
     public String cyan = "\u001B[36m";
     public String white = "\u001B[37m";
+    public String author = "MK";
 
 
     public Colors() {
