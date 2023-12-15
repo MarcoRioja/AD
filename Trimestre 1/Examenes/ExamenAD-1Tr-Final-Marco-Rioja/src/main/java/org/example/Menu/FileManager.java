@@ -57,7 +57,7 @@ public class FileManager {
                 case 6 -> showFolders();
                 case 7 -> moveTo();
                 case 8 -> back();
-                default -> {}
+                default -> {System.out.println(color.blue + "- BYEEE!! :D -");}
             }
         }
 
@@ -84,9 +84,9 @@ public class FileManager {
 
         if (!file.mkdir()) {
             if (file.exists() && file.isDirectory()) {
-                System.err.println("Folder creation failed - " + file.getName() + " - Already Exists");
+                System.out.println(color.red + "Folder creation failed - " + file.getName() + " - Already Exists");
             } else {
-                System.err.println("Folder creation failed - " + file.getName());
+                System.out.println(color.red + "Folder creation failed - " + file.getName());
             }
         } else {
             System.out.println(color.yellow + "Folder " + name + " created");
@@ -106,12 +106,12 @@ public class FileManager {
             System.out.println(color.yellow + "File " + name + " created");
             String write = "";
             do {
-                System.out.println("Do yo want to write in the file? (yes/no)");
+                System.out.println(color.cyan + "Do yo want to write in the file? (yes/no)");
                 write = scanner.nextLine();
             } while (!write.equals("yes") && !write.equals("no"));
             if (write.equals("yes")) {writeFile(name);}
             do {
-                System.out.println("Show File text? (yes/no)");
+                System.out.println(color.cyan + "Show File text? (yes/no)");
                 write = scanner.nextLine();
             } while (!write.equals("yes") && !write.equals("no"));
             if (write.equals("yes")) {readFile(name);}
@@ -152,23 +152,36 @@ public class FileManager {
         String fileName = " ";
         while (fileName.replace(" ", "").isEmpty()) {
 
-            System.out.print(color.cyan + "File Name: ");
+            System.out.print(color.cyan + "Folder/File Name (Can use this): ");
             fileName = scanner.nextLine();
+            if (fileName.equals("this")) {
+                fileName = "";
+                break;
+            }
         }
         File f = new File(basePath + fileName);
+        if(f.exists()){
             System.out.println(color.yellow + " - FILE DATA - ");
-            if(f.exists()){
-                System.out.println(color.yellow + "Name            : "+ color.cyan + f.getName());
-                System.out.println(color.yellow + "Path            : "+ color.cyan + f.getPath());
-                System.out.println(color.yellow + "Absolute Path   : "+ color.cyan + f.getAbsolutePath());
-                System.out.println(color.yellow + "Read            : "+ color.cyan + f.canRead());
-                System.out.println(color.yellow + "Write           : "+ color.cyan + f.canWrite());
-                System.out.println(color.yellow + "Size            : "+ color.cyan + f.length()+ " Kb");
-                System.out.println(color.yellow + "Diretory        : "+ color.cyan + f.isDirectory());
-                System.out.println(color.yellow + "File            : "+ color.cyan + f.isFile());
-                System.out.println(color.yellow + "Father Name     : "+ color.cyan + f.getParent());
+            System.out.println(color.yellow + "Name            : "+ color.magenta + f.getName());
+            System.out.println(color.yellow + "Path            : "+ color.magenta + f.getPath());
+            System.out.println(color.yellow + "Absolute Path   : "+ color.magenta + f.getAbsolutePath());
+            System.out.println(color.yellow + "Read            : "+ color.magenta + f.canRead());
+            System.out.println(color.yellow + "Write           : "+ color.magenta + f.canWrite());
+            System.out.println(color.yellow + "Size            : "+ color.magenta + f.length()+ " Kb");
+            System.out.println(color.yellow + "Diretory        : "+ color.magenta + f.isDirectory());
+            System.out.println(color.yellow + "File            : "+ color.magenta + f.isFile());
+            System.out.println(color.yellow + "Father Name     : "+ color.magenta + f.getParent());
+            if (fileName.contains(".") && !(fileName.charAt(0) == '.')) {
+                System.out.println(color.yellow + "File content    :");
+                readFile(basePath+fileName);
             }
-
+            else {
+                System.out.println(color.yellow + "Folder Files    :");
+                showFolders(basePath+fileName);
+            }
+        } else {
+            System.out.println(color.red + "Folder/File "+ basePath + fileName + " doesn't exist");
+        }
     }
 
     public void showFolders() {
@@ -190,11 +203,32 @@ public class FileManager {
             File[] files = folder.listFiles();
             if (files != null) {
                 for (File file : files) {
-                    System.out.println(file.getName());
+                    System.out.println(color.magenta + " - " +file.getName());
+                }
+                if (files.length == 0) {
+                    System.out.println(color.red + "- Empty -");
                 }
             }
         } else {
-            System.out.println(color.red + "Folder "+ basePath + folderName + " doesn't exist");
+            System.out.println(color.red + "Folder/File "+ basePath + folderName + " doesn't exist");
+        }
+    }
+
+    public void showFolders(String path) {
+        File folder = new File(path);
+
+        if (folder.exists() && folder.isDirectory()) {
+            File[] files = folder.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    System.out.println(color.magenta + " - " +file.getName());
+                }
+                if (files.length == 0) {
+                    System.out.println(color.red + "- Empty -");
+                }
+            }
+        } else {
+            System.out.println(color.red + "Folder "+ path + " doesn't exist");
         }
     }
 
@@ -232,7 +266,7 @@ public class FileManager {
                 String line;
 
                 while ((line = br.readLine()) != null) {
-                    System.out.println(color.yellow + line);
+                    System.out.println(color.magenta + line);
                 }
             } catch (IOException e) {
                 System.err.println(color.red + "Error: " + e.getMessage());
@@ -250,7 +284,7 @@ public class FileManager {
                 String line;
 
                 while ((line = br.readLine()) != null) {
-                    System.out.println(color.yellow + line);
+                    System.out.println(color.magenta + line);
                 }
             } catch (IOException e) {
                 System.err.println(color.red + "Error: " + e.getMessage());
@@ -276,7 +310,7 @@ public class FileManager {
                 String textToWrite = scanner.nextLine();
                 bw.write(textToWrite);
                 bw.newLine();
-                System.out.println("Write Correctly.");
+                System.out.println(color.yellow + "Write Correctly.");
             } catch (IOException e) {
                 System.err.println(color.red + "Error: " + e.getMessage());
             }
@@ -294,7 +328,7 @@ public class FileManager {
                 String textToWrite = scanner.nextLine();
                 bw.write(textToWrite);
                 bw.newLine();
-                System.out.println("Write Correctly.");
+                System.out.println(color.yellow + "Write Correctly.");
             } catch (IOException e) {
                 System.err.println(color.red + "Error: " + e.getMessage());
             }
