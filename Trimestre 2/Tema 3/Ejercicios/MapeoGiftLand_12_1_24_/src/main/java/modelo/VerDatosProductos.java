@@ -9,13 +9,11 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class VerDatosAlumnos {
+public class VerDatosProductos {
 
     public static void main(String[] args) {
 
-        SessionFactory sessionFactory = new Configuration()
-                .configure()
-                .buildSessionFactory();
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
         ThreadLocalSessionContext context = new ThreadLocalSessionContext((SessionFactoryImplementor) sessionFactory);
         context.bind(sessionFactory.openSession());
@@ -25,15 +23,16 @@ public class VerDatosAlumnos {
 
             session.beginTransaction();
 
-            String hql = "FROM Alumno";
-            Query<Alumno> query = session.createQuery(hql, Alumno.class);
+            String hql = "FROM modelo.Producto";
+            Query<Producto> query = session.createQuery(hql, Producto.class);
 
-            List<Alumno> alumnos = query.list();
+            List<Producto> productos = query.list();
 
-            System.out.println("Registros en la tabla Clientes:");
-            for (Alumno f : alumnos) {
+            System.out.println("Registros en la tabla Productos:");
+            for (Producto f : productos) {
                 System.out.println(f.toString());
             }
+
             session.getTransaction().commit();
 
         } catch (Exception e) {

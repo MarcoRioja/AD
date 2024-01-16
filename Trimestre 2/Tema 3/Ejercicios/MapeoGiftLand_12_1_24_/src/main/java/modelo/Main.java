@@ -5,41 +5,35 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.context.internal.ThreadLocalSessionContext;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
-import org.hibernate.query.Query;
 
-import java.util.List;
-
-public class VerDatosAlumnos {
+public class Main {
 
     public static void main(String[] args) {
 
-        SessionFactory sessionFactory = new Configuration()
-                .configure()
-                .buildSessionFactory();
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory(); // Construir la sesin de Hibernate
 
         ThreadLocalSessionContext context = new ThreadLocalSessionContext((SessionFactoryImplementor) sessionFactory);
         context.bind(sessionFactory.openSession());
 
         try {
+            Producto producto = new Producto("Portatil Omnio", "Portatil 64GB", 1200.0f, "HP", 20);
+
             Session session = context.currentSession();
 
             session.beginTransaction();
 
-            String hql = "FROM Alumno";
-            Query<Alumno> query = session.createQuery(hql, Alumno.class);
+            session.save(producto);
 
-            List<Alumno> alumnos = query.list();
-
-            System.out.println("Registros en la tabla Clientes:");
-            for (Alumno f : alumnos) {
-                System.out.println(f.toString());
-            }
             session.getTransaction().commit();
+
+            System.out.println("modelo.Producto: " + producto);
 
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            context.unbind(sessionFactory);
+
+            ThreadLocalSessionContext.unbind(sessionFactory);
+
             sessionFactory.close();
         }
     }
