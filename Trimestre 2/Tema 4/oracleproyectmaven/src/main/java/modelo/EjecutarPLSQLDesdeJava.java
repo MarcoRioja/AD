@@ -1,5 +1,5 @@
 package modelo;
-// codigo a revisar
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -17,31 +17,18 @@ public class EjecutarPLSQLDesdeJava {
         try (Session session = sessionFactory.openSession()) {
             // Usa Session.doWork para ejecutar SQL nativo
             session.doWork(connection -> {
-                // Configura el bloque PL/SQL
-                String bloquePLSQL =
-                        "DECLARE " +
-                                "  Interes NUMBER(5,3); " +
-                                "  Descripcion VARCHAR2(50) := 'inicial'; " +
-                                "  Fecha_max DATE; " +
-                                "  Contabilizado BOOLEAN := TRUE; " +
-                                "  PI CONSTANT REAL := 3.14159; " +
-                                "BEGIN " +
-                                "  DBMS_OUTPUT.PUT_LINE('Interes: ' || Interes); " +
-                                "  DBMS_OUTPUT.PUT_LINE('Descripcion: ' || Descripcion); " +
-                                "  DBMS_OUTPUT.PUT_LINE('Fecha_max: ' || TO_CHAR(Fecha_max, 'DD-MON-YYYY')); " +
-                                "  DBMS_OUTPUT.PUT_LINE('Contabilizado: ' || CASE WHEN Contabilizado THEN 'TRUE' ELSE 'FALSE' END); " +
-                                "  DBMS_OUTPUT.PUT_LINE('PI: ' || PI); " +
-                                "END; ";
+                // Configura la llamada al procedimiento almacenado
+                String procedimientoAlmacenado = "{ CALL ejecutar_bloque_plsql(?) }";
 
-                // Ejecuta el bloque PL/SQL
-                try (CallableStatement statement = connection.prepareCall(bloquePLSQL)) {
-                    // Registra la salida para capturar los mensajes de DBMS_OUTPUT.PUT_LINE
+                // Ejecuta el procedimiento almacenado
+                try (CallableStatement statement = connection.prepareCall(procedimientoAlmacenado)) {
+                    // Registra el parámetro de salida
                     statement.registerOutParameter(1, Types.VARCHAR);
 
-                    // Ejecuta el bloque PL/SQL
+                    // Ejecuta el procedimiento almacenado
                     statement.execute();
 
-                    // Obtiene la salida
+                    // Obtiene el valor del parámetro de salida
                     String output = statement.getString(1);
 
                     // Muestra la salida

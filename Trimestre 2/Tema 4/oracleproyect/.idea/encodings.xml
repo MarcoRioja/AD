@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/pom.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/CrearTabla.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/EliminarRegistro.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/InsertarRegistro.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/ModificarRegistro.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/MostrarRegistros.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/oracleconnect/OracleConnect.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1252" />
+  </component>
+</project>

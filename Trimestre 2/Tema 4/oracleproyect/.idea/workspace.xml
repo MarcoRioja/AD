@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f99e1fc-50b8-47ad-9803-0ff9667cdacd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../mv_oracleproyect/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/CrearTabla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/EliminarRegistro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/InsertarRegistro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/ModificarRegistro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/MostrarRegistros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oracleconnect/OracleConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracleproyectmaven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracleproyectmaven/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracleproyectmaven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracleproyectmaven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oracleproyectmaven/src/main/java/modelo/PLSQL_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oracle/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oracle/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oracle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/CrearTabla.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/EliminarRegistro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/InsertarRegistro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/ModificarRegistro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/MostrarRegistros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oracleconnect/OracleConnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/src/main/java/modelo/EjecutarPLSQLDesdeJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/src/main/java/modelo/EjecutarPLSQLDesdeJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/src/main/java/modelo/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/src/main/java/modelo/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/META-INF/maven/com.example/myproject/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/META-INF/maven/com.example/myproject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/EjecutarPLSQLDesdeJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/EjecutarPLSQLDesdeJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/Empresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/Empresa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/MostrarRegistros.class" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmaven/target/classes/modelo/MostrarRegistros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracleproyectmavenDAO/target/classes/META-INF/maven/com.example/myproject/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../oracleproyectmavenDAO/target/classes/META-INF/maven/com.example/myproject/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2blBMs2YZzgur5NWraMhLouMlkE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CrearTabla.executor": "Run",
+    "Application.InsertarRegistro.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mercp/OneDrive/Documentos/GitHub/2ºDAM/AD/Trimestre 2/Tema 4/oracleproyectmaven",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mercp\OneDrive\Documentos\GitHub\2ºDAM\AD\Trimestre 2\Tema 4\oracleproyect\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mercp\OneDrive\Documentos\GitHub\2ºDAM\AD\Trimestre 2\Tema 4\oracleproyect" />
+      <recent name="C:\Users\mercp\OneDrive\Documentos\GitHub\2ºDAM\AD\Trimestre 2\Tema 4\oracleproyect\src\main\java" />
+      <recent name="C:\Users\mercp\OneDrive\Documentos\GitHub\2ºDAM\AD\Trimestre 2\Tema 4\oracleproyect\src\main\oracleconnect" />
+      <recent name="C:\Users\mercp\OneDrive\Documentos\GitHub\2ºDAM\AD\Trimestre 2\Tema 4\oracleproyect\src\main" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-98297cd8" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f99e1fc-50b8-47ad-9803-0ff9667cdacd" name="Changes" comment="" />
+      <created>1706779739732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706779739732</updated>
+    </task>
+    <servers />
+  </component>
+</project>
