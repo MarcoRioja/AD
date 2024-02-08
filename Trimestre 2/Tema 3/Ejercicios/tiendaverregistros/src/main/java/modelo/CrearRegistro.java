@@ -30,7 +30,7 @@ public class CrearRegistro {
             session.beginTransaction();
 
             // Realizar una consulta para obtener los datos antes de la inserción
-            String selectHqlBeforeInsert = "FROM fabricante";
+            String selectHqlBeforeInsert = "FROM Fabricante";
             Query<Fabricante> selectQueryBeforeInsert = session.createQuery(selectHqlBeforeInsert, Fabricante.class);
             List<Fabricante> fabricantesBeforeInsert = selectQueryBeforeInsert.list();
 
@@ -48,7 +48,7 @@ public class CrearRegistro {
             session.save(nuevoFabricante);
 
             // Realizar una nueva consulta para obtener los datos después de la inserción
-            String selectHqlAfterInsert = "FROM fabricante";
+            String selectHqlAfterInsert = "FROM Fabricante";
             Query<Fabricante> selectQueryAfterInsert = session.createQuery(selectHqlAfterInsert, Fabricante.class);
             List<Fabricante> fabricantesAfterInsert = selectQueryAfterInsert.list();
 

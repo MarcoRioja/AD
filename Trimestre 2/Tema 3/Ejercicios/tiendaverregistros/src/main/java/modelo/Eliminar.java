@@ -30,7 +30,7 @@ public class Eliminar {
             session.beginTransaction();
 
             // Realizar una consulta para obtener los datos antes de la eliminación
-            String selectHqlBeforeDelete = "FROM fabricante WHERE id = 12";
+            String selectHqlBeforeDelete = "FROM Fabricante WHERE id = 12";
             Query<Fabricante> selectQueryBeforeDelete = session.createQuery(selectHqlBeforeDelete, Fabricante.class);
             List<Fabricante> fabricantesBeforeDelete = selectQueryBeforeDelete.list();
 
@@ -41,12 +41,12 @@ public class Eliminar {
             }
 
             // Eliminar el registro
-            String deleteHql = "DELETE FROM fabricante WHERE id = 12";
+            String deleteHql = "DELETE FROM Fabricante WHERE id = 12";
             Query<?> deleteQuery = session.createQuery(deleteHql);
             deleteQuery.executeUpdate();
 
             // Realizar una nueva consulta para obtener los datos después de la eliminación
-            String selectHqlAfterDelete = "FROM fabricante";
+            String selectHqlAfterDelete = "FROM Fabricante";
             Query<Fabricante> selectQueryAfterDelete = session.createQuery(selectHqlAfterDelete, Fabricante.class);
             List<Fabricante> fabricantesAfterDelete = selectQueryAfterDelete.list();
 

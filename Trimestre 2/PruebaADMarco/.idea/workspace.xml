@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b215d948-5bd5-4a78-9330-1b6bba6485a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PruebaADMarco.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/CrearRegistro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/CrearRegistro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/Eliminar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/Eliminar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/ModificarDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/src/main/java/modelo/ModificarDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/META-INF/maven/com.example/myproject/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/META-INF/maven/com.example/myproject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/CrearRegistro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/CrearRegistro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/Eliminar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/Eliminar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/Fabricante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/Fabricante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/ModificarDatos.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/ModificarDatos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/VerDatosFabricante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tema 3/Ejercicios/tiendaverregistros/target/classes/modelo/VerDatosFabricante.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2c2xyCzBU0DXHGihPSjy4yvqKuy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b215d948-5bd5-4a78-9330-1b6bba6485a5" name="Changes" comment="" />
+      <created>1707323728595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707323728595</updated>
+    </task>
+    <servers />
+  </component>
+</project>

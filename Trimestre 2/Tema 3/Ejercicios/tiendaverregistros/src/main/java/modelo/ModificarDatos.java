@@ -31,12 +31,12 @@ public class ModificarDatos {
             session.beginTransaction();
 
             // Modificar el nombre por "Gandalf"
-            String updateHql = "UPDATE fabricante SET nombre = 'Gandalf' WHERE id = 12";
+            String updateHql = "UPDATE Fabricante SET nombre = 'Gandalf' WHERE id = 12";
             Query<?> updateQuery = session.createQuery(updateHql);
             updateQuery.executeUpdate();
 
             // Realizar una nueva consulta para obtener los datos actualizados
-            String selectHql = "FROM fabricante WHERE id = 12";
+            String selectHql = "FROM Fabricante WHERE id = 12";
             Query<Fabricante> selectQuery = session.createQuery(selectHql, Fabricante.class);
             List<Fabricante> fabricantes = selectQuery.list();
 
