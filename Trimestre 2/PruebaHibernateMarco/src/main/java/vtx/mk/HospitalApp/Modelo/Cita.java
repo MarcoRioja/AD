@@ -13,12 +13,12 @@ public class Cita {
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_paciente", referencedColumnName = "id")
+    @JoinColumn(name = "id_paciente")
     private int id_paciente;
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_medico", referencedColumnName = "id")
+    @JoinColumn(name = "id_medico")
     private int id_medico;
 
     @Column(name = "fecha")

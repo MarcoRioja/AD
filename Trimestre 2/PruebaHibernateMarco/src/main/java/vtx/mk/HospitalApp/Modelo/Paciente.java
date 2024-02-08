@@ -1,6 +1,8 @@
 package vtx.mk.HospitalApp.Modelo;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "pacientes")
@@ -8,9 +10,8 @@ public class Paciente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @OneToMany(mappedBy = "id_paciente", cascade = CascadeType.ALL)
-    @Column(name = "id") // Cambiar el nombre de la columna aquí
-    private int id;
+    @Column(name="id_paciente")
+    private int id_paciente;
 
     @Column(name = "nombre")
     private String nombre;
@@ -33,6 +34,9 @@ public class Paciente {
     @Column(name = "historial")
     private String historial;
 
+    @OneToMany(mappedBy = "id_paciente", cascade = CascadeType.ALL)
+    private List<Cita> citas = new ArrayList<>();
+
     // Constructor por defecto requerido por Hibernate
     public Paciente() {
     }
@@ -48,15 +52,15 @@ public class Paciente {
         this.historial = historial;
     }
 
-    public int getId() {
-        return id;
+    public int getId_paciente() {
+        return id_paciente;
     }
 
     // Método para imprimir información del objeto fabricante
     @Override
     public String toString() {
         return "Paciente: {" +
-                "id=" + id +
+                "id=" + id_paciente +
                 ", nombre='" + nombre +
                 ", apellidos='" + apellidos +
                 ", ciudad='" + ciudad +
