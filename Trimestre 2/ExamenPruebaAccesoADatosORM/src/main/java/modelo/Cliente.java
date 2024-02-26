@@ -36,7 +36,6 @@ public class Cliente {
 		this.ciudad=ciudad;
 		this.fecha=fecha;
 		
-		
 	}
 
 	public int getId_cliente() {
